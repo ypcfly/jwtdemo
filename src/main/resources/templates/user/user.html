@@ -1,0 +1,29 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户基本信息</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>用户名：</td>
+                <td th:text="${user.userName}">姓名</td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td th:text="${user.password}"></td>
+            </tr>
+            <tr>
+                <td>地址：</td>
+                <td th:text="${user.address}"></td>
+            </tr>
+            <tr>
+                <td>年龄：</td>
+                <td th:text="${user.age}"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
